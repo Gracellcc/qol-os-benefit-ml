@@ -16,9 +16,11 @@ oncology trial comparisons.
 - Fold-local imputation, scaling, and categorical encoding
 - Held-out linear SHAP values for model interpretation
 
-The repository does not include the study dataset. Place the direction-adjusted
-analysis table at `data/analysis_table_direction_adjusted.csv`; the required
-columns are documented in [data/README.md](data/README.md).
+The source database and the processed review workbook used for the final
+analysis are available in [`data/raw`](data/raw) and
+[`data/processed`](data/processed), respectively. The modeling table is the
+`Model_Analysis_Data` sheet of the processed workbook; its required columns are
+documented in [data/README.md](data/README.md).
 
 ## Installation
 

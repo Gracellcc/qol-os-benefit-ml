@@ -1,7 +1,15 @@
-# Input data schema
+# Study data and input schema
 
-The analysis dataset is not distributed in this repository. The modeling scripts
-expect one row per analytic trial comparison and the following identifiers:
+The repository contains:
+
+- `raw/Combined_2013-2021_8.21.xlsx`: source database received for cleaning
+- `processed/Clean_Dataset_Review_Final.xlsx`: cleaning audit, exclusions,
+  direction harmonization, and final analysis table
+
+The `Model_Analysis_Data` sheet in the processed workbook contains one row per
+analytic trial comparison. Export this sheet as
+`data/analysis_table_direction_adjusted.csv` before running the scripts. The
+modeling scripts expect the following identifiers:
 
 - `RowID`: unique comparison identifier
 - `NCT_ID`: normalized ClinicalTrials.gov identifier
